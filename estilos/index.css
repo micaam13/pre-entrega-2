@@ -1,0 +1,124 @@
+.seccion-hero {
+  background: url("../imagenes/inicio_hero.png") lightgray 50% / cover no-repeat;
+  width: 100%;
+}
+h1 {
+  color: #f0e6e6;
+  text-align: left;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Battambang;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 3.92px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 974px;
+  height: 677px;
+  padding: 24px;
+}
+
+.seccion-fotos h2 {
+  background: linear-gradient(90deg, #eee4d3 8%, #dbb68e 55.5%, #cd955d 95.5%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: Battambang;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+main {
+  background: linear-gradient(
+    180deg,
+    #000 23%,
+    rgba(102, 63, 26, 0.92) 45%,
+    rgba(189, 116, 48, 0.85) 65.5%
+  );
+}
+
+.seccion-fotos {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 38px 0;
+}
+.seccion-tarjetas {
+  background: url("../imagenes/inicio_granos.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 300px;
+}
+article {
+  border-radius: 38px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(147, 147, 147, 0.2) 100%
+  );
+  box-shadow: 0px 0px 9px 9px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(11.350000381469727px);
+  color: #321c15;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: Battambang;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 58.8px */
+  letter-spacing: 0.84px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 12px;
+  width: 1263px;
+  height: 298px;
+}
+.cajita {
+  border-radius: 32px;
+  background: rgba(247, 202, 160, 0.6);
+  backdrop-filter: blur(5px);
+  display: flex;
+  width: 320px;
+  padding: 101px 69px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.article-alternar {
+  flex-direction: row-reverse;
+}
+
+.seccion-tarjetas h3 {
+  color: #321c15;
+  padding: 101px 69px;
+  text-align: center;
+}
+
+.seccion-tarjetas p {
+  color: #eee4d3;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Battambang;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

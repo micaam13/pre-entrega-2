@@ -1,0 +1,141 @@
+.conocer-hero {
+  background: linear-gradient(
+    181deg,
+    #131210 0.82%,
+    #171312 41.15%,
+    #2c1e15 60.82%,
+    #1a1613 86.39%
+  );
+  padding: 2px 0 34px 0;
+}
+
+.contenedor-hero {
+  background: url("../imagenes/conoce_hero.png") no-repeat center center;
+  margin: 0 auto;
+  max-width: 943px;
+  height: 442px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.texto-hero {
+  background: linear-gradient(90deg, #fff -46.52%, #dbdbdb 25.98%, #999 53.48%);
+  border-radius: 50px;
+  padding: 8px 64px;
+  margin-right: 47px;
+}
+
+.texto-hero h1 {
+  font-size: 24px;
+  line-height: 180%;
+  letter-spacing: 14%;
+  font-family: "Battambang", system-ui;
+  font-weight: 400;
+  color: #444;
+}
+
+.conocer-contenido {
+  display: flex;
+  flex-direction: column;
+  padding: 38px 140px 266px 140px;
+  background: url("../imagenes/conoce_fondo.png") no-repeat;
+  background-size: cover;
+}
+
+.conocer-articulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+  gap: 36px;
+}
+
+.conocer-contenedor-titulo {
+  background-color: #d9d9d94f;
+  height: 108px;
+  width: 563px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+}
+
+.conocer-contenedor-titulo h2 {
+  background: conic-gradient(
+    from 90deg at 5.52% 50.45%,
+    rgba(0, 0, 0, 0.71) 0deg,
+    #e2b595 360deg
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 60px;
+  font-family: "Battambang", system-ui;
+}
+
+.contenedor-conocer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1176px;
+  width: 100%;
+}
+
+.conocer-tarjeta {
+  width: 487px;
+  border-radius: 30px;
+  background: linear-gradient(
+        to bottom right,
+        rgba(172, 121, 79, 0.5) 0%,
+        rgba(75, 36, 6, 0.5) 33%,
+        rgba(133, 79, 36, 0.5) 44%,
+        rgba(48, 30, 20, 0.5) 50%
+      )
+      bottom right / 50% 50% no-repeat,
+    linear-gradient(
+        to bottom left,
+        rgba(172, 121, 79, 0.5) 0%,
+        rgba(75, 36, 6, 0.5) 33%,
+        rgba(133, 79, 36, 0.5) 44%,
+        rgba(48, 30, 20, 0.5) 50%
+      )
+      bottom left / 50% 50% no-repeat,
+    linear-gradient(
+        to top left,
+        rgba(172, 121, 79, 0.5) 0%,
+        rgba(75, 36, 6, 0.5) 33%,
+        rgba(133, 79, 36, 0.5) 44%,
+        rgba(48, 30, 20, 0.5) 50%
+      )
+      top left / 50% 50% no-repeat,
+    linear-gradient(
+        to top right,
+        rgba(172, 121, 79, 0.5) 0%,
+        rgba(75, 36, 6, 0.5) 33%,
+        rgba(133, 79, 36, 0.5) 44%,
+        rgba(48, 30, 20, 0.5) 50%
+      )
+      top right / 50% 50% no-repeat;
+  box-shadow: 6px -13px 9px 13px rgba(0, 0, 0, 0.28);
+}
+
+.conocer-tarjeta img {
+  border-radius: 30px;
+  width: 100%;
+}
+
+.conocer-tarjeta p {
+  font-family: "Catamaran", sans-serif;
+  color: white;
+  font-weight: semibold;
+  font-size: 13px;
+  line-height: 188%;
+  letter-spacing: 37%;
+  text-align: center;
+  margin: 14px;
+}

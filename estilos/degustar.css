@@ -1,0 +1,78 @@
+main {
+  background: linear-gradient(
+    180deg,
+    #000 44%,
+    #3b1e0c 63.5%,
+    #9a531d 84%,
+    #bd7430 99%
+  );
+}
+.seccion-hero {
+  background: url("../imagenes/degustar_hero.png") no-repeat center center;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 32px;
+}
+.cajita-contenedora p {
+  font-family: Battambang;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180.23%; /* 68.488px */
+  letter-spacing: 4.94px;
+  background: linear-gradient(
+    90deg,
+    rgba(247, 202, 160, 0.94) 0.14%,
+    rgba(124, 96, 73, 0.94) 20.24%,
+    rgba(59, 39, 28, 0.94) 45.24%,
+    rgba(48, 30, 20, 0.94) 92.31%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cajita-contenedora {
+  border-radius: 40px;
+  background: rgba(217, 217, 217, 0.14);
+  margin-right: 91px;
+  max-width: 1181px;
+  padding: 80px 32px;
+}
+.degustar-oler article img {
+  border-radius: 50% / 50%;
+}
+.degustar-oler {
+  padding: 41px 21px 300px 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+.degustar-oler article {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
+.cajita-transparente {
+  border-radius: 40px;
+  background: rgba(217, 217, 217, 0.14);
+  padding: 40px;
+  width: 800px;
+  flex: 1;
+}
+.cajita-transparente p {
+  color: #fff;
+  text-align: center;
+  font-family: Battambang;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 181.342%; /* 54.402px */
+  letter-spacing: 7.5px;
+}
+.alreves {
+  flex-direction: row-reverse;
+}
