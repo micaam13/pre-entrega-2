@@ -89,49 +89,16 @@
 .conocer-tarjeta {
   width: 487px;
   border-radius: 30px;
-  background: linear-gradient(
-        to bottom right,
-        rgba(172, 121, 79, 0.5) 0%,
-        rgba(75, 36, 6, 0.5) 33%,
-        rgba(133, 79, 36, 0.5) 44%,
-        rgba(48, 30, 20, 0.5) 50%
-      )
-      bottom right / 50% 50% no-repeat,
-    linear-gradient(
-        to bottom left,
-        rgba(172, 121, 79, 0.5) 0%,
-        rgba(75, 36, 6, 0.5) 33%,
-        rgba(133, 79, 36, 0.5) 44%,
-        rgba(48, 30, 20, 0.5) 50%
-      )
-      bottom left / 50% 50% no-repeat,
-    linear-gradient(
-        to top left,
-        rgba(172, 121, 79, 0.5) 0%,
-        rgba(75, 36, 6, 0.5) 33%,
-        rgba(133, 79, 36, 0.5) 44%,
-        rgba(48, 30, 20, 0.5) 50%
-      )
-      top left / 50% 50% no-repeat,
-    linear-gradient(
-        to top right,
-        rgba(172, 121, 79, 0.5) 0%,
-        rgba(75, 36, 6, 0.5) 33%,
-        rgba(133, 79, 36, 0.5) 44%,
-        rgba(48, 30, 20, 0.5) 50%
-      )
-      top right / 50% 50% no-repeat;
   box-shadow: 6px -13px 9px 13px rgba(0, 0, 0, 0.28);
 }
 
 .conocer-tarjeta img {
-  border-radius: 30px;
   width: 100%;
 }
 
 .conocer-tarjeta p {
   font-family: "Catamaran", sans-serif;
-  color: white;
+  color: black;
   font-weight: semibold;
   font-size: 13px;
   line-height: 188%;
