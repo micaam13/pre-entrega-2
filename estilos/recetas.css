@@ -82,12 +82,31 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  .seccion-titulos {
+    background: url("../imagenes/receta_hero.png") lightgray 50% / cover
+      no-repeat;
+    height: 500px;
+    padding: 0 32px;
+    gap: 24px;
+  }
+
+  .seccion-recetas {
+    padding: 0 32px;
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+
+  .receta p {
+    font-size: 18px;
+  }
+
+  .cajita h2 {
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .seccion-titulos {
-    background: url("../imagenes/receta_hero.png") lightgray 50% / cover
-      no-repeat;
     height: 941px;
   }
 
