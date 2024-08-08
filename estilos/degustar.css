@@ -73,6 +73,37 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  .seccion-hero {
+    height: 500px;
+    padding: 0 24px;
+  }
+
+  .cajita-transparente,
+  .cajita-contenedora {
+    padding: 32px;
+  }
+
+  .cajita-contenedora p {
+    font-size: 20px;
+    line-height: 160%;
+  }
+
+  .cajita-transparente p {
+    font-size: 18px;
+    line-height: 160%;
+  }
+
+  .degustar-oler {
+    padding: 32px 24px;
+  }
+
+  .degustar-oler article img {
+    width: 40%;
+  }
+
+  main {
+    padding-bottom: 200px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -120,5 +151,9 @@ main {
 
   .alreves {
     flex-direction: row-reverse !important;
+  }
+
+  main {
+    padding-bottom: 0;
   }
 }
