@@ -10,7 +10,7 @@ main {
 .seccion-hero {
   background: url("../imagenes/degustar_hero.png") no-repeat center center;
   background-size: cover;
-  height: 800px;
+  height: 200px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -18,7 +18,8 @@ main {
 }
 .cajita-contenedora p {
   font-family: Battambang;
-  font-size: 38px;
+  font-size: 12px;
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   line-height: 180.23%; /* 68.488px */
@@ -38,41 +39,86 @@ main {
 .cajita-contenedora {
   border-radius: 40px;
   background: rgba(217, 217, 217, 0.14);
-  margin-right: 91px;
-  max-width: 1181px;
-  padding: 80px 32px;
 }
 .degustar-oler article img {
+  width: 60%;
   border-radius: 50% / 50%;
 }
 .degustar-oler {
-  padding: 41px 21px 300px 21px;
+  padding: 41px 8px 300px 8px;
   display: flex;
   flex-direction: column;
   gap: 90px;
 }
 .degustar-oler article {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 41px;
 }
 .cajita-transparente {
   border-radius: 40px;
   background: rgba(217, 217, 217, 0.14);
-  padding: 40px;
-  width: 800px;
+  margin-top: -16px;
+  padding: 16px;
   flex: 1;
 }
 .cajita-transparente p {
   color: #fff;
-  text-align: center;
+  text-align: start;
   font-family: Battambang;
-  font-size: 30px;
+  font-size: 12px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 181.342%; /* 54.402px */
-  letter-spacing: 7.5px;
+  line-height: 22px;
+  letter-spacing: -5%;
 }
-.alreves {
-  flex-direction: row-reverse;
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+  .seccion-hero {
+    height: 800px;
+  }
+
+  .cajita-contenedora p {
+    font-size: 38px;
+    text-align: left;
+  }
+
+  .cajita-contenedora {
+    margin-right: 91px;
+    max-width: 1181px;
+    padding: 80px 32px;
+  }
+
+  .degustar-oler article img {
+    width: auto;
+  }
+
+  .degustar-oler {
+    padding: 41px 21px 300px 21px;
+  }
+
+  .degustar-oler article {
+    flex-direction: row;
+    gap: 41px;
+  }
+
+  .cajita-transparente {
+    padding: 40px;
+    width: 800px;
+    margin-top: 0;
+  }
+
+  .cajita-transparente p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 181.342%; /* 54.402px */
+    letter-spacing: 7.5px;
+  }
+
+  .alreves {
+    flex-direction: row-reverse !important;
+  }
 }
