@@ -1,21 +1,5 @@
 @import "base";
 
-$color-gradiente-main: linear-gradient(
-  180deg,
-  #000 44%,
-  #3b1e0c 63.5%,
-  #9a531d 84%,
-  #bd7430 99%
-);
-$color-texto-gradiente: linear-gradient(
-  90deg,
-  rgba(247, 202, 160, 0.94) 0.14%,
-  rgba(124, 96, 73, 0.94) 20.24%,
-  rgba(59, 39, 28, 0.94) 45.24%,
-  rgba(48, 30, 20, 0.94) 92.31%
-);
-$color-transparente-bg: rgba(217, 217, 217, 0.14);
-
 @mixin hero-size($height) {
   height: $height;
   background: url("../../imagenes/degustar_hero.png") no-repeat center center;

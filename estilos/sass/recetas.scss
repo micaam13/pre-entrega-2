@@ -1,22 +1,5 @@
 @import "base";
 
-$font-battambang: "Battambang", system-ui;
-$color-gradient-caja: linear-gradient(90deg, #e2b595 0%, #83553b 100%);
-$color-gradient-receta: linear-gradient(
-  180deg,
-  rgba(61, 28, 8, 0.79) 0%,
-  #ca7d43 43%,
-  rgba(116, 51, 11, 0.58) 100%
-);
-$background-main: linear-gradient(
-  180deg,
-  #000 41%,
-  #3b1e0c 64%,
-  #9a531d 85.5%,
-  rgba(189, 116, 48, 0.85) 98%
-);
-$shadow-receta: 18px 4px 21px 0px rgba(0, 0, 0, 0.25);
-
 main {
   padding-top: 16px;
   padding-bottom: 200px;

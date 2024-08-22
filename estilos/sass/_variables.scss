@@ -1,3 +1,56 @@
 //  Breakpoints
 $tablet: 768px;
 $desktop: 1440px;
+
+$color-gradiente-hero: #131210;
+$color-gradiente-intermedio: #171312;
+$color-gradiente-final: #2c1e15;
+$color-texto-hero: #444;
+$color-fondo-titulo: #d9d9d94f;
+$color-titulo-gradiente: conic-gradient(
+  from 90deg at 5.52% 50.45%,
+  rgba(0, 0, 0, 0.71) 0deg,
+  #e2b595 360deg
+);
+$color-tarjeta-texto: black;
+
+$color-gradiente-main: linear-gradient(
+  180deg,
+  #000 44%,
+  #3b1e0c 63.5%,
+  #9a531d 84%,
+  #bd7430 99%
+);
+$color-texto-gradiente: linear-gradient(
+  90deg,
+  rgba(247, 202, 160, 0.94) 0.14%,
+  rgba(124, 96, 73, 0.94) 20.24%,
+  rgba(59, 39, 28, 0.94) 45.24%,
+  rgba(48, 30, 20, 0.94) 92.31%
+);
+$color-transparente-bg: rgba(217, 217, 217, 0.14);
+
+$font-battambang: "Battambang", system-ui;
+$font-courgette: "Courgette", cursive;
+$color-text-gradient: conic-gradient(
+  from 90deg at 5.52% 50.45%,
+  rgba(0, 0, 0, 0.71) 0deg,
+  #e2b595 360deg
+);
+$box-shadow-card: 10px 10px 20px rgba(0, 0, 0, 0.3);
+
+$color-gradient-caja: linear-gradient(90deg, #e2b595 0%, #83553b 100%);
+$color-gradient-receta: linear-gradient(
+  180deg,
+  rgba(61, 28, 8, 0.79) 0%,
+  #ca7d43 43%,
+  rgba(116, 51, 11, 0.58) 100%
+);
+$background-main: linear-gradient(
+  180deg,
+  #000 41%,
+  #3b1e0c 64%,
+  #9a531d 85.5%,
+  rgba(189, 116, 48, 0.85) 98%
+);
+$shadow-receta: 18px 4px 21px 0px rgba(0, 0, 0, 0.25);

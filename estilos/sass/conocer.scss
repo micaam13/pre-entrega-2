@@ -1,17 +1,5 @@
 @import "base";
 
-$color-gradiente-hero: #131210;
-$color-gradiente-intermedio: #171312;
-$color-gradiente-final: #2c1e15;
-$color-texto-hero: #444;
-$color-fondo-titulo: #d9d9d94f;
-$color-titulo-gradiente: conic-gradient(
-  from 90deg at 5.52% 50.45%,
-  rgba(0, 0, 0, 0.71) 0deg,
-  #e2b595 360deg
-);
-$color-tarjeta-texto: black;
-
 .conocer-hero {
   @include fondo-gradiente-hero;
   padding: 2px 0 34px 0;

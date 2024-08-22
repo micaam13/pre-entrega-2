@@ -1,14 +1,5 @@
 @import "base";
 
-$font-battambang: "Battambang", system-ui;
-$font-courgette: "Courgette", cursive;
-$color-text-gradient: conic-gradient(
-  from 90deg at 5.52% 50.45%,
-  rgba(0, 0, 0, 0.71) 0deg,
-  #e2b595 360deg
-);
-$box-shadow-card: 10px 10px 20px rgba(0, 0, 0, 0.3);
-
 .disfrutar-hero {
   background: url("../../imagenes/disfrutar_hero.png") no-repeat center center;
   background-size: cover;
