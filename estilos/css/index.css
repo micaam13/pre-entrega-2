@@ -1,7 +1,8 @@
 .seccion-hero {
-  background: url("../imagenes/inicio_hero.png") lightgray 50% / cover no-repeat;
+  background: url("../../imagenes/inicio_hero.png") lightgray 50%/cover no-repeat;
   width: 100%;
 }
+
 h1 {
   color: #f0e6e6;
   text-align: left;
@@ -35,12 +36,7 @@ h1 {
 }
 
 main {
-  background: linear-gradient(
-    180deg,
-    #000 23%,
-    rgba(102, 63, 26, 0.92) 45%,
-    rgba(189, 116, 48, 0.85) 65.5%
-  );
+  background: linear-gradient(180deg, #000 23%, rgba(102, 63, 26, 0.92) 45%, rgba(189, 116, 48, 0.85) 65.5%);
 }
 
 .seccion-fotos {
@@ -51,8 +47,9 @@ main {
   align-items: center;
   padding: 38px 0;
 }
+
 .seccion-tarjetas {
-  background: url("../imagenes/inicio_granos.png");
+  background: url("../../imagenes/inicio_granos.png");
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -61,15 +58,12 @@ main {
   padding-top: 32px;
   padding-bottom: 300px;
 }
+
 article {
   border-radius: 38px;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.2) 0%,
-    rgba(147, 147, 147, 0.2) 100%
-  );
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(147, 147, 147, 0.2) 100%);
   box-shadow: 0px 0px 9px 9px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(11.350000381469727px);
+  backdrop-filter: blur(11.3500003815px);
   color: #321c15;
   display: flex;
   text-align: center;
@@ -86,6 +80,7 @@ article {
   width: 1263px;
   height: 298px;
 }
+
 .cajita {
   border-radius: 32px;
   background: rgba(247, 202, 160, 0.6);

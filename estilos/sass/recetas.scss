@@ -1,0 +1,168 @@
+$font-battambang: "Battambang", system-ui;
+$color-gradient-caja: linear-gradient(90deg, #e2b595 0%, #83553b 100%);
+$color-gradient-receta: linear-gradient(
+  180deg,
+  rgba(61, 28, 8, 0.79) 0%,
+  #ca7d43 43%,
+  rgba(116, 51, 11, 0.58) 100%
+);
+$background-main: linear-gradient(
+  180deg,
+  #000 41%,
+  #3b1e0c 64%,
+  #9a531d 85.5%,
+  rgba(189, 116, 48, 0.85) 98%
+);
+$shadow-receta: 18px 4px 21px 0px rgba(0, 0, 0, 0.25);
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding-top: 16px;
+  padding-bottom: 200px;
+  background: $background-main;
+}
+
+.seccion-titulos {
+  @include flex-center;
+  align-items: center;
+  gap: 8px;
+}
+
+.caja-contenedora {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.cajita {
+  width: 100%;
+  border-radius: 32px;
+  background: $color-gradient-caja;
+  backdrop-filter: blur(5px);
+  @include flex-center;
+  padding: 16px 30px;
+
+  h2 {
+    color: #fff;
+    text-align: center;
+    font-family: $font-battambang;
+    font-size: 12px;
+    font-weight: 900;
+  }
+}
+
+.seccion-recetas {
+  margin: 0 auto;
+  display: grid;
+  column-gap: 8px;
+  row-gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 16px;
+}
+
+.receta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  padding: 24px 0;
+  margin: 0 auto;
+  border-radius: 35px;
+  background: $color-gradient-receta;
+  box-shadow: $shadow-receta;
+
+  img {
+    width: 50%;
+  }
+
+  p {
+    color: #fff;
+    text-align: center;
+    font-family: $font-battambang;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 120%; /* 41.31px */
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .seccion-titulos {
+    background: url("../../imagenes/receta_hero.png") lightgray 50% / cover
+      no-repeat;
+    height: 500px;
+    padding: 0 32px;
+    gap: 24px;
+  }
+
+  .seccion-recetas {
+    padding: 0 32px;
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+
+  .receta p {
+    font-size: 18px;
+  }
+
+  .cajita h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .seccion-titulos {
+    height: 941px;
+  }
+
+  .caja-contenedora {
+    justify-content: space-around;
+    gap: 0;
+  }
+
+  main {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .cajita {
+    background: rgba(68, 34, 14, 0.52);
+    width: 384px;
+    height: 159px;
+    padding: 0;
+
+    h2 {
+      font-size: 35px;
+      line-height: 179%; /* 62.65px */
+      letter-spacing: 11.9px;
+      margin: 0 69px;
+    }
+  }
+
+  .seccion-recetas {
+    padding: 216px 0 306px 0;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 82px;
+    row-gap: 82px;
+  }
+
+  .receta {
+    width: 290px;
+    height: 367px;
+
+    p {
+      font-size: 27px;
+      line-height: 153%; /* 41.31px */
+      letter-spacing: 9.18px;
+    }
+  }
+}

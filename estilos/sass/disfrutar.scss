@@ -1,0 +1,112 @@
+$font-battambang: "Battambang", system-ui;
+$font-courgette: "Courgette", cursive;
+$color-text-gradient: conic-gradient(
+  from 90deg at 5.52% 50.45%,
+  rgba(0, 0, 0, 0.71) 0deg,
+  #e2b595 360deg
+);
+$box-shadow-card: 10px 10px 20px rgba(0, 0, 0, 0.3);
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disfrutar-hero {
+  background: url("../../imagenes/disfrutar_hero.png") no-repeat center center;
+  background-size: cover;
+  height: 641px;
+  @include flex-center;
+
+  h1 {
+    background: $color-text-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: $font-battambang;
+  }
+
+  p {
+    font-family: $font-battambang;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 242%;
+    letter-spacing: -3%;
+    text-align: center;
+  }
+}
+
+.contenedor-hero {
+  width: 792px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20%;
+}
+
+.disfrutar-contenido {
+  background: url("../../imagenes/disfrutar_fondo.png") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 300px;
+}
+
+.disfrutar-carta {
+  background: url("../../imagenes/sobre_carta.png") no-repeat center center;
+  max-width: 1268px;
+  margin-top: 16px;
+
+  .disfrutar-contenido-carta {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px;
+
+    p {
+      font-family: $font-courgette;
+      font-size: 40px;
+      line-height: 136%;
+      letter-spacing: -7%;
+    }
+  }
+}
+
+.disfrutar-fotos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 72px;
+}
+
+.disfrutar-fila-foto {
+  display: flex;
+  gap: 160px;
+}
+
+.alternar-fila {
+  margin-top: -60px;
+  margin-left: 230px;
+}
+
+.disfrutar-contenedor-foto {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  @include flex-center;
+  transform: rotate(45deg);
+  position: relative;
+  border-radius: 40px;
+  box-shadow: $box-shadow-card;
+
+  .disfrutar-foto {
+    width: 142%;
+    height: 142%;
+    object-fit: cover;
+    transform: rotate(-45deg);
+    position: absolute;
+  }
+}

@@ -1,18 +1,13 @@
 .disfrutar-hero {
-  background: url("../imagenes/disfrutar_hero.png") no-repeat center center;
+  background: url("../../imagenes/disfrutar_hero.png") no-repeat center center;
   background-size: cover;
   height: 641px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .disfrutar-hero h1 {
-  background: conic-gradient(
-    from 90deg at 5.52% 50.45%,
-    rgba(0, 0, 0, 0.71) 0deg,
-    #e2b595 360deg
-  );
+  background: conic-gradient(from 90deg at 5.52% 50.45%, rgba(0, 0, 0, 0.71) 0deg, #e2b595 360deg);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -20,7 +15,6 @@
   font-size: 60px;
   font-family: "Battambang", system-ui;
 }
-
 .disfrutar-hero p {
   font-family: "Battambang", system-ui;
   font-weight: 300;
@@ -39,7 +33,7 @@
 }
 
 .disfrutar-contenido {
-  background: url("../imagenes/disfrutar_fondo.png") no-repeat center;
+  background: url("../../imagenes/disfrutar_fondo.png") no-repeat center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -48,19 +42,17 @@
 }
 
 .disfrutar-carta {
-  background: url("../imagenes/sobre_carta.png") no-repeat center center;
+  background: url("../../imagenes/sobre_carta.png") no-repeat center center;
   max-width: 1268px;
   margin-top: 16px;
 }
-
-.disfrutar-contenido-carta {
+.disfrutar-carta .disfrutar-contenido-carta {
   display: flex;
   flex-direction: column;
   gap: 24px;
   padding: 32px;
 }
-
-.disfrutar-carta p {
+.disfrutar-carta .disfrutar-contenido-carta p {
   font-family: "Courgette", cursive;
   font-size: 40px;
   line-height: 136%;
@@ -95,8 +87,7 @@
   border-radius: 40px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
-
-.disfrutar-foto {
+.disfrutar-contenedor-foto .disfrutar-foto {
   width: 142%;
   height: 142%;
   object-fit: cover;

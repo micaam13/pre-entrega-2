@@ -1,16 +1,10 @@
 .conocer-hero {
-  background: linear-gradient(
-    181deg,
-    #131210 0.82%,
-    #171312 41.15%,
-    #2c1e15 60.82%,
-    #1a1613 86.39%
-  );
+  background: linear-gradient(181deg, #131210 0.82%, #171312 41.15%, #2c1e15 60.82%, #1a1613 86.39%);
   padding: 2px 0 34px 0;
 }
 
 .contenedor-hero {
-  background: url("../imagenes/conoce_hero.png") no-repeat center center;
+  background: url("../../imagenes/conoce_hero.png") no-repeat center center;
   margin: 0 auto;
   max-width: 943px;
   height: 442px;
@@ -28,7 +22,6 @@
   padding: 8px 64px;
   margin-right: 47px;
 }
-
 .texto-hero h1 {
   font-size: 24px;
   line-height: 180%;
@@ -42,7 +35,7 @@
   display: flex;
   flex-direction: column;
   padding: 38px 140px 266px 140px;
-  background: url("../imagenes/conoce_fondo.png") no-repeat;
+  background: url("../../imagenes/conoce_fondo.png") no-repeat;
   background-size: cover;
 }
 
@@ -55,21 +48,16 @@
 }
 
 .conocer-contenedor-titulo {
-  background-color: #d9d9d94f;
+  background-color: rgba(217, 217, 217, 0.3098039216);
   height: 108px;
   width: 563px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   border-radius: 40px;
 }
-
 .conocer-contenedor-titulo h2 {
-  background: conic-gradient(
-    from 90deg at 5.52% 50.45%,
-    rgba(0, 0, 0, 0.71) 0deg,
-    #e2b595 360deg
-  );
+  background: conic-gradient(from 90deg at 5.52% 50.45%, rgba(0, 0, 0, 0.71) 0deg, #e2b595 360deg);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -91,11 +79,9 @@
   border-radius: 30px;
   box-shadow: 6px -13px 9px 13px rgba(0, 0, 0, 0.28);
 }
-
 .conocer-tarjeta img {
   width: 100%;
 }
-
 .conocer-tarjeta p {
   font-family: "Catamaran", sans-serif;
   color: black;

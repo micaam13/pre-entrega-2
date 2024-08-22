@@ -1,49 +1,36 @@
 main {
-  background: linear-gradient(
-    180deg,
-    #000 44%,
-    #3b1e0c 63.5%,
-    #9a531d 84%,
-    #bd7430 99%
-  );
+  background: linear-gradient(180deg, #000 44%, #3b1e0c 63.5%, #9a531d 84%, #bd7430 99%);
 }
+
 .seccion-hero {
-  background: url("../imagenes/degustar_hero.png") no-repeat center center;
-  background-size: cover;
   height: 200px;
+  background: url("../../imagenes/degustar_hero.png") no-repeat center center;
+  background-size: cover;
   display: flex;
+  align-items: center;
+  justify-content: center;
   align-items: flex-end;
-  justify-content: flex-end;
   padding-bottom: 32px;
-}
-.cajita-contenedora p {
-  font-family: Battambang;
-  font-size: 12px;
-  text-align: center;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 180.23%; /* 68.488px */
-  letter-spacing: 4.94px;
-  background: linear-gradient(
-    90deg,
-    rgba(247, 202, 160, 0.94) 0.14%,
-    rgba(124, 96, 73, 0.94) 20.24%,
-    rgba(59, 39, 28, 0.94) 45.24%,
-    rgba(48, 30, 20, 0.94) 92.31%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .cajita-contenedora {
   border-radius: 40px;
   background: rgba(217, 217, 217, 0.14);
+  padding: 16px;
 }
-.degustar-oler article img {
-  width: 60%;
-  border-radius: 50% / 50%;
+.cajita-contenedora p {
+  font-family: "Battambang", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 180.23%;
+  letter-spacing: 4.94px;
+  background: linear-gradient(90deg, rgba(247, 202, 160, 0.94) 0.14%, rgba(124, 96, 73, 0.94) 20.24%, rgba(59, 39, 28, 0.94) 45.24%, rgba(48, 30, 20, 0.94) 92.31%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 .degustar-oler {
   padding: 41px 8px 300px 8px;
   display: flex;
@@ -52,9 +39,16 @@ main {
 }
 .degustar-oler article {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
 }
+.degustar-oler article img {
+  width: 60%;
+  border-radius: 50%/50%;
+}
+
 .cajita-transparente {
   border-radius: 40px;
   background: rgba(217, 217, 217, 0.14);
@@ -65,9 +59,8 @@ main {
 .cajita-transparente p {
   color: #fff;
   text-align: start;
-  font-family: Battambang;
+  font-family: "Battambang", sans-serif;
   font-size: 12px;
-  font-style: normal;
   line-height: 22px;
   letter-spacing: -5%;
 }
@@ -75,84 +68,72 @@ main {
 @media screen and (min-width: 768px) {
   .seccion-hero {
     height: 500px;
+    background: url("../../imagenes/degustar_hero.png") no-repeat center center;
+    background-size: cover;
     padding: 0 24px;
   }
-
-  .cajita-transparente,
-  .cajita-contenedora {
+  .cajita-contenedora,
+  .cajita-transparente {
     padding: 32px;
   }
-
   .cajita-contenedora p {
     font-size: 20px;
     line-height: 160%;
   }
-
   .cajita-transparente p {
     font-size: 18px;
     line-height: 160%;
   }
-
   .degustar-oler {
     padding: 32px 24px;
   }
-
   .degustar-oler article img {
     width: 40%;
   }
-
   main {
     padding-bottom: 200px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .seccion-hero {
     height: 800px;
+    background: url("../../imagenes/degustar_hero.png") no-repeat center center;
+    background-size: cover;
   }
-
-  .cajita-contenedora p {
-    font-size: 38px;
-    text-align: left;
-  }
-
   .cajita-contenedora {
     margin-right: 91px;
     max-width: 1181px;
     padding: 80px 32px;
   }
-
-  .degustar-oler article img {
-    width: auto;
+  .cajita-contenedora p {
+    font-size: 38px;
+    text-align: left;
   }
-
   .degustar-oler {
     padding: 41px 21px 300px 21px;
   }
-
   .degustar-oler article {
     flex-direction: row;
     gap: 41px;
   }
-
+  .degustar-oler article img {
+    width: auto;
+  }
   .cajita-transparente {
     padding: 40px;
     width: 800px;
     margin-top: 0;
   }
-
   .cajita-transparente p {
     text-align: center;
     font-size: 30px;
     font-weight: 700;
-    line-height: 181.342%; /* 54.402px */
+    line-height: 181.342%;
     letter-spacing: 7.5px;
   }
-
   .alreves {
     flex-direction: row-reverse !important;
   }
-
   main {
     padding-bottom: 0;
   }
