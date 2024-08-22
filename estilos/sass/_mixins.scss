@@ -1,0 +1,27 @@
+@mixin tablet {
+  @media screen and (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin fondo-gradiente-hero {
+  background: linear-gradient(
+    181deg,
+    $color-gradiente-hero 0.82%,
+    $color-gradiente-intermedio 41.15%,
+    $color-gradiente-final 60.82%,
+    #1a1613 86.39%
+  );
+}

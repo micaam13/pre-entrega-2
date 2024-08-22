@@ -1,3 +1,5 @@
+@import "base";
+
 $color-gradiente-main: linear-gradient(
   180deg,
   #000 44%,
@@ -14,12 +16,6 @@ $color-texto-gradiente: linear-gradient(
 );
 $color-transparente-bg: rgba(217, 217, 217, 0.14);
 
-@mixin flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 @mixin hero-size($height) {
   height: $height;
   background: url("../../imagenes/degustar_hero.png") no-repeat center center;
@@ -32,6 +28,14 @@ $color-transparente-bg: rgba(217, 217, 217, 0.14);
 
 main {
   background: $color-gradiente-main;
+
+  @include tablet {
+    padding-bottom: 200px;
+  }
+
+  @include desktop {
+    padding-bottom: 0;
+  }
 }
 
 .seccion-hero {
@@ -39,12 +43,31 @@ main {
   @include flex-center;
   align-items: flex-end;
   padding-bottom: 32px;
+
+  @include tablet {
+    @include hero-size(500px);
+    padding: 0 24px;
+  }
+
+  @include desktop {
+    @include hero-size(800px);
+  }
 }
 
 .cajita-contenedora {
   border-radius: 40px;
   background: $color-transparente-bg;
   padding: 16px;
+
+  @include tablet {
+    padding: 32px;
+  }
+
+  @include desktop {
+    margin-right: 91px;
+    max-width: 1181px;
+    padding: 80px 32px;
+  }
 
   p {
     font-family: "Battambang", sans-serif;
@@ -57,6 +80,16 @@ main {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @include tablet {
+      font-size: 20px;
+      line-height: 160%;
+    }
+
+    @include desktop {
+      font-size: 38px;
+      text-align: left;
+    }
   }
 }
 
@@ -66,14 +99,35 @@ main {
   flex-direction: column;
   gap: 90px;
 
+  @include tablet {
+    padding: 32px 24px;
+  }
+
+  @include desktop {
+    padding: 41px 21px 300px 21px;
+  }
+
   article {
     @include flex-center;
     flex-direction: column;
     gap: 16px;
 
+    @include desktop {
+      flex-direction: row;
+      gap: 41px;
+    }
+
     img {
       width: 60%;
       @include border-radius-hero;
+
+      @include tablet {
+        width: 40%;
+      }
+
+      @include desktop {
+        width: auto;
+      }
     }
   }
 }
@@ -85,6 +139,16 @@ main {
   padding: 16px;
   flex: 1;
 
+  @include tablet {
+    padding: 32px;
+  }
+
+  @include desktop {
+    padding: 40px;
+    width: 800px;
+    margin-top: 0;
+  }
+
   p {
     color: #fff;
     text-align: start;
@@ -92,78 +156,13 @@ main {
     font-size: 12px;
     line-height: 22px;
     letter-spacing: -5%;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .seccion-hero {
-    @include hero-size(500px);
-    padding: 0 24px;
-  }
-
-  .cajita-contenedora,
-  .cajita-transparente {
-    padding: 32px;
-  }
-
-  .cajita-contenedora p {
-    font-size: 20px;
-    line-height: 160%;
-  }
-
-  .cajita-transparente p {
-    font-size: 18px;
-    line-height: 160%;
-  }
-
-  .degustar-oler {
-    padding: 32px 24px;
-
-    article img {
-      width: 40%;
+    @include tablet {
+      font-size: 18px;
+      line-height: 160%;
     }
-  }
 
-  main {
-    padding-bottom: 200px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .seccion-hero {
-    @include hero-size(800px);
-  }
-
-  .cajita-contenedora {
-    margin-right: 91px;
-    max-width: 1181px;
-    padding: 80px 32px;
-
-    p {
-      font-size: 38px;
-      text-align: left;
-    }
-  }
-
-  .degustar-oler {
-    padding: 41px 21px 300px 21px;
-
-    article {
-      flex-direction: row;
-      gap: 41px;
-
-      img {
-        width: auto;
-      }
-    }
-  }
-
-  .cajita-transparente {
-    padding: 40px;
-    width: 800px;
-    margin-top: 0;
-
-    p {
+    @include desktop {
       text-align: center;
       font-size: 30px;
       font-weight: 700;
@@ -171,12 +170,10 @@ main {
       letter-spacing: 7.5px;
     }
   }
+}
 
+@include desktop {
   .alreves {
     flex-direction: row-reverse !important;
-  }
-
-  main {
-    padding-bottom: 0;
   }
 }

@@ -1,3 +1,5 @@
+@import "base";
+
 $font-battambang: "Battambang", system-ui;
 $color-gradient-caja: linear-gradient(90deg, #e2b595 0%, #83553b 100%);
 $color-gradient-receta: linear-gradient(
@@ -15,22 +17,33 @@ $background-main: linear-gradient(
 );
 $shadow-receta: 18px 4px 21px 0px rgba(0, 0, 0, 0.25);
 
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 main {
   padding-top: 16px;
   padding-bottom: 200px;
   background: $background-main;
+
+  @include desktop {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .seccion-titulos {
   @include flex-center;
   align-items: center;
   gap: 8px;
+
+  @include tablet {
+    background: url("../../imagenes/receta_hero.png") lightgray 50% / cover
+      no-repeat;
+    height: 500px;
+    padding: 0 32px;
+    gap: 24px;
+  }
+
+  @include desktop {
+    height: 941px;
+  }
 }
 
 .caja-contenedora {
@@ -39,6 +52,11 @@ main {
   flex-direction: row;
   align-items: center;
   gap: 8px;
+
+  @include desktop {
+    justify-content: space-around;
+    gap: 0;
+  }
 }
 
 .cajita {
@@ -49,12 +67,30 @@ main {
   @include flex-center;
   padding: 16px 30px;
 
+  @include desktop {
+    background: rgba(68, 34, 14, 0.52);
+    width: 384px;
+    height: 159px;
+    padding: 0;
+  }
+
   h2 {
     color: #fff;
     text-align: center;
     font-family: $font-battambang;
     font-size: 12px;
     font-weight: 900;
+
+    @include tablet {
+      font-size: 20px;
+    }
+
+    @include desktop {
+      font-size: 35px;
+      line-height: 179%; /* 62.65px */
+      letter-spacing: 11.9px;
+      margin: 0 69px;
+    }
   }
 }
 
@@ -65,6 +101,19 @@ main {
   row-gap: 16px;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 16px;
+
+  @include tablet {
+    padding: 0 32px;
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+
+  @include desktop {
+    padding: 216px 0 306px 0;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 82px;
+    row-gap: 82px;
+  }
 }
 
 .receta {
@@ -80,6 +129,11 @@ main {
   background: $color-gradient-receta;
   box-shadow: $shadow-receta;
 
+  @include desktop {
+    width: 290px;
+    height: 367px;
+  }
+
   img {
     width: 50%;
   }
@@ -92,74 +146,12 @@ main {
     font-weight: 900;
     line-height: 120%; /* 41.31px */
     letter-spacing: 2px;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .seccion-titulos {
-    background: url("../../imagenes/receta_hero.png") lightgray 50% / cover
-      no-repeat;
-    height: 500px;
-    padding: 0 32px;
-    gap: 24px;
-  }
-
-  .seccion-recetas {
-    padding: 0 32px;
-    column-gap: 24px;
-    row-gap: 24px;
-  }
-
-  .receta p {
-    font-size: 18px;
-  }
-
-  .cajita h2 {
-    font-size: 20px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .seccion-titulos {
-    height: 941px;
-  }
-
-  .caja-contenedora {
-    justify-content: space-around;
-    gap: 0;
-  }
-
-  main {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .cajita {
-    background: rgba(68, 34, 14, 0.52);
-    width: 384px;
-    height: 159px;
-    padding: 0;
-
-    h2 {
-      font-size: 35px;
-      line-height: 179%; /* 62.65px */
-      letter-spacing: 11.9px;
-      margin: 0 69px;
+    @include tablet {
+      font-size: 18px;
     }
-  }
 
-  .seccion-recetas {
-    padding: 216px 0 306px 0;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 82px;
-    row-gap: 82px;
-  }
-
-  .receta {
-    width: 290px;
-    height: 367px;
-
-    p {
+    @include desktop {
       font-size: 27px;
       line-height: 153%; /* 41.31px */
       letter-spacing: 9.18px;

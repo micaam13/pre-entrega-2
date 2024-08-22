@@ -1,3 +1,5 @@
+@import "base";
+
 $font-battambang: "Battambang", system-ui;
 $font-courgette: "Courgette", cursive;
 $color-text-gradient: conic-gradient(
@@ -6,12 +8,6 @@ $color-text-gradient: conic-gradient(
   #e2b595 360deg
 );
 $box-shadow-card: 10px 10px 20px rgba(0, 0, 0, 0.3);
-
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .disfrutar-hero {
   background: url("../../imagenes/disfrutar_hero.png") no-repeat center center;

@@ -1,0 +1,87 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(90deg, #1a0f06 5.5%, #3b1e0c 48%, #211207 88%);
+}
+
+.poema-footer {
+  color: #e2b595;
+  text-align: center;
+  font-family: Baskervville;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 236%; /* 63.72px */
+  letter-spacing: 6.21px;
+
+  @include desktop {
+    font-size: 27px;
+    width: 870px;
+  }
+}
+
+.footer-ovalo {
+  overflow: hidden;
+  border-radius: 50% / 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -190px;
+  border: 1px solid #000;
+  background: linear-gradient(
+    180deg,
+    rgba(226, 181, 149, 0.78) 0%,
+    #000 12%,
+    #000 87%,
+    rgba(202, 162, 133, 0.78) 100%
+  );
+  flex-shrink: 0;
+
+  @include desktop {
+    width: 673px;
+    height: 380px;
+  }
+}
+
+.lista-redes {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 56px;
+  padding-bottom: 24px;
+  width: 100%;
+}
+
+.link-instagram {
+  height: 26px;
+  width: 36px;
+
+  @include desktop {
+    height: 62px;
+    width: 68px;
+  }
+}
+
+.link-youtube {
+  height: 40px;
+  width: 40px;
+
+  @include desktop {
+    height: 47px;
+    width: 81px;
+  }
+}
+
+.link-correo {
+  height: 40px;
+  width: 40px;
+
+  @include desktop {
+    height: 70px;
+    width: 89px;
+  }
+}
