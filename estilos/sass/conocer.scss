@@ -21,8 +21,14 @@
 .texto-hero {
   background: linear-gradient(90deg, #fff -46.52%, #dbdbdb 25.98%, #999 53.48%);
   border-radius: 50px;
-  padding: 8px 64px;
-  margin-right: 47px;
+  padding: 8px 16px;
+  margin: 0 auto;
+
+  @include desktop {
+    margin: 0;
+    padding: 8px 64px;
+    margin-right: 47px;
+  }
 
   h1 {
     font-size: 24px;
@@ -37,9 +43,13 @@
 .conocer-contenido {
   display: flex;
   flex-direction: column;
-  padding: 38px 140px 266px 140px;
   background: url("../../imagenes/conoce_fondo.png") no-repeat;
   background-size: cover;
+  padding-bottom: 256px;
+
+  @include desktop {
+    padding: 38px 140px 266px 140px;
+  }
 }
 
 .conocer-articulo {
@@ -48,14 +58,28 @@
   align-items: center;
   margin-top: 90px;
   gap: 36px;
+
+  @include tablet {
+    padding: 0 40px;
+  }
+
+  @include desktop {
+    padding: 0;
+  }
 }
 
 .conocer-contenedor-titulo {
   background-color: $color-fondo-titulo;
-  height: 108px;
-  width: 563px;
+  max-width: 563px;
+  padding: 16px;
   @include flex-center;
-  border-radius: 40px;
+  border-radius: 24px;
+
+  @include tablet {
+    border-radius: 40px;
+    width: 100%;
+    height: 108px;
+  }
 
   h2 {
     background: $color-titulo-gradiente;
@@ -63,23 +87,40 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 32px;
     font-family: "Battambang", system-ui;
+
+    @include tablet {
+      font-size: 40px;
+    }
+
+    @include desktop {
+      font-size: 60px;
+    }
   }
 }
 
 .contenedor-conocer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   max-width: 1176px;
   width: 100%;
+  gap: 32px;
+
+  @include tablet {
+    flex-direction: row;
+  }
 }
 
 .conocer-tarjeta {
-  width: 487px;
+  width: 100%;
   border-radius: 30px;
   box-shadow: 6px -13px 9px 13px rgba(0, 0, 0, 0.28);
+
+  @include desktop {
+    width: 487px;
+  }
 
   img {
     width: 100%;
@@ -94,5 +135,9 @@
     letter-spacing: 37%;
     text-align: center;
     margin: 14px;
+
+    @include tablet {
+      font-size: 16px;
+    }
   }
 }

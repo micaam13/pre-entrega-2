@@ -213,7 +213,7 @@ main {
 main {
   background: linear-gradient(180deg, #000 44%, #3b1e0c 63.5%, #9a531d 84%, #bd7430 99%);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
   main {
     padding-bottom: 200px;
   }
@@ -234,7 +234,7 @@ main {
   align-items: flex-end;
   padding-bottom: 32px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
   .seccion-hero {
     height: 500px;
     background: url("../../imagenes/degustar_hero.png") no-repeat center center;
@@ -255,7 +255,7 @@ main {
   background: rgba(217, 217, 217, 0.14);
   padding: 16px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
   .cajita-contenedora {
     padding: 32px;
   }
@@ -279,7 +279,7 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
   .cajita-contenedora p {
     font-size: 20px;
     line-height: 160%;
@@ -298,7 +298,7 @@ main {
   flex-direction: column;
   gap: 90px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
   .degustar-oler {
     padding: 32px 24px;
   }
@@ -325,7 +325,7 @@ main {
   width: 60%;
   border-radius: 50%/50%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
   .degustar-oler article img {
     width: 40%;
   }
@@ -343,7 +343,7 @@ main {
   padding: 16px;
   flex: 1;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
   .cajita-transparente {
     padding: 32px;
   }
@@ -363,7 +363,7 @@ main {
   line-height: 22px;
   letter-spacing: -5%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
   .cajita-transparente p {
     font-size: 18px;
     line-height: 160%;

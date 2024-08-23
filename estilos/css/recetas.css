@@ -238,7 +238,7 @@ main {
   align-items: center;
   gap: 8px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
   .seccion-titulos {
     background: url("../../imagenes/receta_hero.png") lightgray 50%/cover no-repeat;
     height: 500px;
@@ -285,7 +285,7 @@ main {
   font-size: 12px;
   font-weight: 900;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
   .cajita h2 {
     font-size: 20px;
   }
@@ -307,7 +307,7 @@ main {
   grid-template-columns: repeat(2, 1fr);
   margin-top: 16px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
   .seccion-recetas {
     padding: 0 32px;
     column-gap: 24px;
@@ -350,7 +350,7 @@ main {
   line-height: 120%; /* 41.31px */
   letter-spacing: 2px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
   .receta p {
     font-size: 18px;
   }
