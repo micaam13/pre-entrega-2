@@ -12,6 +12,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lgr">
@@ -110,7 +111,7 @@
         </div>
       </section>
       <section class="disfrutar-contenido">
-        <article class="disfrutar-carta">
+        <article class="disfrutar-carta" data-aos="fade-up-left">
           <div class="disfrutar-contenido-carta">
             <p>
               Creando un momento único Disfrutar tu café de la mañana solo, con
@@ -131,7 +132,7 @@
           </div>
         </article>
 
-        <div class="disfrutar-fotos">
+        <div class="disfrutar-fotos" data-aos="fade-up">
           <div class="disfrutar-fila-foto">
             <div class="disfrutar-contenedor-foto">
               <img src="imagenes/disfrutar_1.png" class="disfrutar-foto" />
@@ -194,5 +195,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

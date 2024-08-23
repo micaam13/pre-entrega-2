@@ -12,6 +12,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lgr">
@@ -113,7 +114,7 @@
             <h2>Origen</h2>
           </div>
           <div class="contenedor-conocer">
-            <div class="card conocer-tarjeta">
+            <div class="card conocer-tarjeta" data-aos="flip-left">
               <img
                 src="imagenes/conoce_origen_1.png"
                 class="card-img-top"
@@ -132,7 +133,7 @@
               </div>
             </div>
 
-            <div class="card conocer-tarjeta">
+            <div class="card conocer-tarjeta" data-aos="flip-right">
               <img
                 src="imagenes/conoce_origen_2.png"
                 class="card-img-top"
@@ -160,7 +161,7 @@
           </div>
 
           <div class="contenedor-conocer">
-            <div class="card conocer-tarjeta">
+            <div class="card conocer-tarjeta" data-aos="flip-left">
               <img
                 src="imagenes/conoce_tostados_1.png"
                 class="card-img-top"
@@ -182,7 +183,7 @@
               </div>
             </div>
 
-            <div class="card conocer-tarjeta">
+            <div class="card conocer-tarjeta" data-aos="flip-right">
               <img
                 src="imagenes/conoce_tostados_2.png"
                 class="card-img-top"
@@ -257,4 +258,8 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
   ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

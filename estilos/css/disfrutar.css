@@ -40,6 +40,9 @@ nav {
     display: flex;
   }
 }
+.lista-pepitas li {
+  position: relative;
+}
 .lista-pepitas li a {
   display: flex;
   flex-direction: column;
@@ -47,8 +50,26 @@ nav {
   text-decoration: none;
 }
 .lista-pepitas li a p {
-  color: #4b2406;
+  color: white;
   font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  height: fit-content;
+}
+.lista-pepitas li a img {
+  transition: transform 0.3s ease;
+  display: block;
+}
+.lista-pepitas li a:hover img {
+  transform: scale(1.2) rotate(30deg);
+}
+.lista-pepitas li a:hover p {
+  opacity: 1;
 }
 
 .pepita-vacia {
@@ -59,13 +80,17 @@ nav {
 .logo-nav {
   width: 34px;
   height: 40px;
+  transition: transform 0.3s ease;
 }
 @media screen and (min-width: 1440px) {
   .logo-nav {
-    width: auto;
-    height: auto;
+    width: 80px;
+    height: 80px;
     margin: 3px 0 4px 50px;
   }
+}
+.logo-nav:hover {
+  transform: scale(1.2);
 }
 
 .navbar-collapse {
@@ -151,6 +176,12 @@ footer {
   padding-bottom: 24px;
   width: 100%;
 }
+.lista-redes > li {
+  transition: all 0.2s linear;
+}
+.lista-redes > li:hover {
+  opacity: 0.6;
+}
 
 .link-instagram {
   height: 26px;
@@ -158,8 +189,8 @@ footer {
 }
 @media screen and (min-width: 1440px) {
   .link-instagram {
-    height: 62px;
-    width: 68px;
+    height: 56px;
+    width: 56px;
   }
 }
 
@@ -169,8 +200,8 @@ footer {
 }
 @media screen and (min-width: 1440px) {
   .link-youtube {
-    height: 47px;
-    width: 81px;
+    height: 56px;
+    width: 56px;
   }
 }
 
@@ -180,8 +211,8 @@ footer {
 }
 @media screen and (min-width: 1440px) {
   .link-correo {
-    height: 70px;
-    width: 89px;
+    height: 56px;
+    width: 56px;
   }
 }
 
@@ -257,6 +288,8 @@ main {
   background: url("../../imagenes/sobre_carta.png") no-repeat center center;
   max-width: 1268px;
   margin-top: 16px;
+  border-radius: 16px;
+  box-shadow: -4px 4px 20px 12px rgba(0, 0, 0, 0.18);
 }
 .disfrutar-carta .disfrutar-contenido-carta {
   display: flex;

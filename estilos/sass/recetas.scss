@@ -55,6 +55,11 @@ main {
   @extend %box-style;
   width: 100%;
   background: $color-gradient-caja;
+  transition: all 0.3s ease;
+
+  &:hover {
+    backdrop-filter: blur(10px);
+  }
 
   @include desktop {
     background: rgba(68, 34, 14, 0.52);
@@ -114,6 +119,11 @@ main {
   padding: 24px 0;
   margin: 0 auto;
   box-shadow: $shadow-receta;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   @include desktop {
     width: 290px;

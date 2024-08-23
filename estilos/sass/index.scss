@@ -88,6 +88,11 @@ article {
   padding: 12px;
   width: 1263px;
   height: 298px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 .cajita {
   border-radius: 32px;

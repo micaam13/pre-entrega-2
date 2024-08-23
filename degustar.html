@@ -12,6 +12,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lgr">
@@ -109,7 +110,7 @@
         </div>
       </section>
       <section class="degustar-oler">
-        <article>
+        <article data-aos="fade-right">
           <img src="imagenes/degustar_cafe_1.png" alt="oler el cafe" />
           <div class="cajita-transparente">
             <p>
@@ -121,7 +122,7 @@
             </p>
           </div>
         </article>
-        <article class="alreves">
+        <article class="alreves" data-aos="fade-left">
           <img src="imagenes/degustar_cafe_2.png" alt="degustar el cafe" />
           <div class="cajita-transparente">
             <p>
@@ -177,5 +178,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

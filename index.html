@@ -12,6 +12,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lgr">
@@ -100,7 +101,7 @@
     </nav>
     <main>
       <section class="seccion-hero">
-        <h1>
+        <h1 data-aos="fade-right">
           “Cada sorbo de café es un viaje sensorial, donde la frescura de su
           aroma te despierta y el rico sabor te envuelve en una calidez que
           reconforta el alma.”
@@ -108,7 +109,11 @@
       </section>
       <section class="seccion-fotos">
         <h2>“El viaje hacia tu taza”</h2>
-        <img src="imagenes/inicio_fotos.png" alt="fotos de cultivos cafe" />
+        <img
+          src="imagenes/inicio_fotos.png"
+          alt="fotos de cultivos cafe"
+          data-aos="zoom-in"
+        />
       </section>
       <section class="seccion-tarjetas">
         <article>
@@ -180,5 +185,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

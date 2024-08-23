@@ -47,6 +47,8 @@
   background: url("../../imagenes/sobre_carta.png") no-repeat center center;
   max-width: 1268px;
   margin-top: 16px;
+  border-radius: 16px;
+  box-shadow: -4px 4px 20px 12px rgb(0 0 0 / 18%);
 
   .disfrutar-contenido-carta {
     display: flex;

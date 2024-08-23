@@ -43,15 +43,42 @@ nav {
     display: flex;
   }
 
-  li a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
+  li {
+    position: relative;
 
-    p {
-      color: #4b2406;
-      font-weight: 500;
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+
+      p {
+        color: white;
+        font-weight: 500;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        text-align: center;
+        transition: opacity 0.3s ease;
+        height: fit-content;
+      }
+
+      img {
+        transition: transform 0.3s ease;
+        display: block;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.2) rotate(30deg);
+        }
+
+        p {
+          opacity: 1;
+        }
+      }
     }
   }
 }
@@ -63,11 +90,16 @@ nav {
 .logo-nav {
   width: 34px;
   height: 40px;
+  transition: transform 0.3s ease;
 
   @include desktop {
-    width: auto;
-    height: auto;
+    width: 80px;
+    height: 80px;
     margin: 3px 0 4px 50px;
+  }
+
+  &:hover {
+    transform: scale(1.2);
   }
 }
 

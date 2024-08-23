@@ -54,6 +54,14 @@ footer {
   margin-right: 56px;
   padding-bottom: 24px;
   width: 100%;
+
+  & > li {
+    transition: all 0.2s linear;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
 }
 
 .link-instagram {
@@ -61,8 +69,8 @@ footer {
   width: 36px;
 
   @include desktop {
-    height: 62px;
-    width: 68px;
+    height: 56px;
+    width: 56px;
   }
 }
 
@@ -71,8 +79,8 @@ footer {
   width: 40px;
 
   @include desktop {
-    height: 47px;
-    width: 81px;
+    height: 56px;
+    width: 56px;
   }
 }
 
@@ -81,7 +89,7 @@ footer {
   width: 40px;
 
   @include desktop {
-    height: 70px;
-    width: 89px;
+    height: 56px;
+    width: 56px;
   }
 }
