@@ -244,35 +244,59 @@ main {
 .disfrutar-hero {
   background: url("../../imagenes/disfrutar_hero.png") no-repeat center center;
   background-size: cover;
-  height: 641px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 1440px) {
+  .disfrutar-hero {
+    height: 641px;
+  }
 }
 .disfrutar-hero h1 {
   background: conic-gradient(from 90deg at 5.52% 50.45%, rgba(0, 0, 0, 0.71) 0deg, #e2b595 360deg);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 32px;
   font-weight: bold;
-  font-size: 60px;
   font-family: "Battambang", system-ui;
+  padding: 12px;
+  margin-top: 40px;
+}
+@media screen and (min-width: 1440px) {
+  .disfrutar-hero h1 {
+    margin-top: 0;
+    padding: 0;
+    font-size: 60px;
+  }
 }
 .disfrutar-hero p {
   font-family: "Battambang", system-ui;
   font-weight: 300;
-  font-size: 32px;
-  line-height: 242%;
+  font-size: 18px;
   letter-spacing: -3%;
   text-align: center;
+  padding: 24px 0;
+}
+@media screen and (min-width: 1440px) {
+  .disfrutar-hero p {
+    padding: 0;
+    font-size: 32px;
+    line-height: 242%;
+  }
 }
 
 .contenedor-hero {
-  width: 792px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 20%;
+}
+@media screen and (min-width: 1440px) {
+  .contenedor-hero {
+    width: 792px;
+    margin-left: 20%;
+  }
 }
 
 .disfrutar-contenido {
@@ -299,38 +323,68 @@ main {
 }
 .disfrutar-carta .disfrutar-contenido-carta p {
   font-family: "Courgette", cursive;
-  font-size: 40px;
-  line-height: 136%;
+  font-size: 16px;
   letter-spacing: -7%;
+}
+@media screen and (min-width: 1440px) {
+  .disfrutar-carta .disfrutar-contenido-carta p {
+    font-size: 40px;
+    line-height: 136%;
+  }
 }
 
 .disfrutar-fotos {
   display: flex;
   flex-direction: column;
-  margin-top: 72px;
+  margin-top: 46px;
+  gap: 20vw;
+}
+@media screen and (min-width: 425px) {
+  .disfrutar-fotos {
+    margin-top: 72px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .disfrutar-fotos {
+    gap: 0px;
+  }
 }
 
 .disfrutar-fila-foto {
   display: flex;
-  gap: 160px;
+  gap: 20vw;
+}
+@media screen and (min-width: 1440px) {
+  .disfrutar-fila-foto {
+    gap: 160px;
+  }
 }
 
-.alternar-fila {
-  margin-top: -60px;
-  margin-left: 230px;
+@media screen and (min-width: 1440px) {
+  .alternar-fila {
+    margin-top: -60px;
+    margin-left: 230px;
+  }
 }
 
 .disfrutar-contenedor-foto {
-  width: 300px;
-  height: 300px;
+  width: 30vw;
+  height: 30vw;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   transform: rotate(45deg);
   position: relative;
-  border-radius: 40px;
+  border-radius: 20px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+@media screen and (min-width: 1440px) {
+  .disfrutar-contenedor-foto {
+    border-radius: 40px;
+    width: 300px;
+    height: 300px;
+  }
 }
 .disfrutar-contenedor-foto .disfrutar-foto {
   width: 142%;

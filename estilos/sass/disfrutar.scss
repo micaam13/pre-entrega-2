@@ -3,35 +3,55 @@
 .disfrutar-hero {
   background: url("../../imagenes/disfrutar_hero.png") no-repeat center center;
   background-size: cover;
-  height: 641px;
   @include flex-center;
+
+  @include desktop {
+    height: 641px;
+  }
 
   h1 {
     background: $color-text-gradient;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 32px;
     font-weight: bold;
-    font-size: 60px;
     font-family: $font-battambang;
+    padding: 12px;
+    margin-top: 40px;
+
+    @include desktop {
+      margin-top: 0;
+      padding: 0;
+      font-size: 60px;
+    }
   }
 
   p {
     font-family: $font-battambang;
     font-weight: 300;
-    font-size: 32px;
-    line-height: 242%;
+    font-size: 18px;
     letter-spacing: -3%;
     text-align: center;
+    padding: 24px 0;
+
+    @include desktop {
+      padding: 0;
+      font-size: 32px;
+      line-height: 242%;
+    }
   }
 }
 
 .contenedor-hero {
-  width: 792px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 20%;
+
+  @include desktop {
+    width: 792px;
+    margin-left: 20%;
+  }
 }
 
 .disfrutar-contenido {
@@ -58,9 +78,13 @@
 
     p {
       font-family: $font-courgette;
-      font-size: 40px;
-      line-height: 136%;
+      font-size: 16px;
       letter-spacing: -7%;
+
+      @include desktop {
+        font-size: 40px;
+        line-height: 136%;
+      }
     }
   }
 }
@@ -68,28 +92,48 @@
 .disfrutar-fotos {
   display: flex;
   flex-direction: column;
-  margin-top: 72px;
+  margin-top: 46px;
+  gap: 20vw;
+
+  @include tablet {
+    margin-top: 72px;
+  }
+  @include desktop {
+    gap: 0px;
+  }
 }
 
 .disfrutar-fila-foto {
   display: flex;
-  gap: 160px;
+  gap: 20vw;
+
+  @include desktop {
+    gap: 160px;
+  }
 }
 
 .alternar-fila {
-  margin-top: -60px;
-  margin-left: 230px;
+  @include desktop {
+    margin-top: -60px;
+    margin-left: 230px;
+  }
 }
 
 .disfrutar-contenedor-foto {
-  width: 300px;
-  height: 300px;
+  width: 30vw;
+  height: 30vw;
   overflow: hidden;
   @include flex-center;
   transform: rotate(45deg);
   position: relative;
-  border-radius: 40px;
+  border-radius: 20px;
   box-shadow: $box-shadow-card;
+
+  @include desktop {
+    border-radius: 40px;
+    width: 300px;
+    height: 300px;
+  }
 
   .disfrutar-foto {
     width: 142%;
